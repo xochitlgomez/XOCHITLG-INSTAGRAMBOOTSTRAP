@@ -1,95 +1,279 @@
-<article class="card mb-4">
-  <div class="card-header bg-white d-flex justify-content-between align-items-center">
-    <div class="d-flex align-items-center gap-2">
-      <div class="rounded-circle bg-secondary-subtle" style="width: 32px; height: 32px;"></div>
-      <strong>My first photo</strong>
-    </div>
-    <small class="text-muted">03/02</small>
-  </div>
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Instagram Photo Feed</title>
 
-  <img src="https://picsum.photos/seed/ig1/900/600" class="w-100" alt="post image" />
+    <!-- Bootstrap CSS (CDN) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
 
-  <div class="card-body">
-    <div class="d-flex justify-content-between align-items-center mb-2">
-      <div class="d-flex gap-3 fs-5">
-        <i class="bi bi-heart"></i>
-        <i class="bi bi-chat"></i>
-        <i class="bi bi-send"></i>
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+
+  <body class="bg-light">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-white border-bottom">
+      <div class="container">
+        <a class="navbar-brand fw-semibold" href="#">Instagram</a>
+
+        <div class="ms-auto d-flex gap-2">
+          <button id="feedBtn" type="button" class="btn btn-secondary btn-sm">
+  Feed
+</button>
+<button id="gridBtn" type="button" class="btn btn-outline-secondary btn-sm">
+  Grid
+</button>
+          <button type="button" class="btn btn-success btn-sm">
+            New Post
+          </button>
+          <button type="button" class="btn btn-outline-secondary btn-sm">
+            Settings
+          </button>
+        </div>
       </div>
-      <i class="bi bi-bookmark fs-5"></i>
-    </div>
+    </nav>
 
-    <p class="mb-2"><strong>123 likes</strong></p>
+    <!-- MAIN -->
+    <main class="container py-4">
+      <!-- FEED VIEW (1 por fila) -->
+      <section id="feedView">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 col-lg-6">
+            <!-- Post 1 -->
+            <article class="card mb-4">
+              <div
+                class="card-header bg-white d-flex justify-content-between align-items-center"
+              >
+                <div class="d-flex align-items-center gap-2">
+                  <div
+                    class="rounded-circle bg-secondary-subtle"
+                    style="width: 32px; height: 32px"
+                  ></div>
+                  <strong>My first photo</strong>
+                </div>
+                <small class="text-muted">03/02</small>
+              </div>
 
-    <p class="mb-1">
-      <strong>username</strong>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-    </p>
+              <img
+                src="https://picsum.photos/seed/ig1/900/600"
+                class="w-100"
+                alt="post image"
+              />
 
-    <p class="text-muted mb-0">View all 4 comments</p>
-  </div>
-</article>
+              <div class="card-body">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-2"
+                >
+                  <div class="d-flex gap-3 fs-5">
+                    <i class="bi bi-heart"></i>
+                    <i class="bi bi-chat"></i>
+                    <i class="bi bi-send"></i>
+                  </div>
+                  <i class="bi bi-bookmark fs-5"></i>
+                </div>
 
-<article class="card mb-4">
-  <div class="card-header bg-white d-flex justify-content-between align-items-center">
-    <div class="d-flex align-items-center gap-2">
-      <div class="rounded-circle bg-secondary-subtle" style="width: 32px; height: 32px;"></div>
-      <strong>Another day</strong>
-    </div>
-    <small class="text-muted">03/01</small>
-  </div>
+                <p class="mb-2"><strong>123 likes</strong></p>
 
-  <img src="https://picsum.photos/seed/ig2/900/600" class="w-100" alt="post image" />
+                <p class="mb-1">
+                  <strong>username</strong>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
 
-  <div class="card-body">
-    <div class="d-flex justify-content-between align-items-center mb-2">
-      <div class="d-flex gap-3 fs-5">
-        <i class="bi bi-heart"></i>
-        <i class="bi bi-chat"></i>
-        <i class="bi bi-send"></i>
-      </div>
-      <i class="bi bi-bookmark fs-5"></i>
-    </div>
+                <p class="text-muted mb-0">View all 4 comments</p>
+              </div>
+            </article>
 
-    <p class="mb-2"><strong>98 likes</strong></p>
+            <!-- Post 2 -->
+            <article class="card mb-4">
+              <div
+                class="card-header bg-white d-flex justify-content-between align-items-center"
+              >
+                <div class="d-flex align-items-center gap-2">
+                  <div
+                    class="rounded-circle bg-secondary-subtle"
+                    style="width: 32px; height: 32px"
+                  ></div>
+                  <strong>Another day</strong>
+                </div>
+                <small class="text-muted">03/01</small>
+              </div>
 
-    <p class="mb-1">
-      <strong>username</strong>
-      This is a second post to make the feed look real.
-    </p>
+              <img
+                src="https://picsum.photos/seed/ig2/900/600"
+                class="w-100"
+                alt="post image"
+              />
 
-    <p class="text-muted mb-0">View all 2 comments</p>
-  </div>
-</article>
+              <div class="card-body">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-2"
+                >
+                  <div class="d-flex gap-3 fs-5">
+                    <i class="bi bi-heart"></i>
+                    <i class="bi bi-chat"></i>
+                    <i class="bi bi-send"></i>
+                  </div>
+                  <i class="bi bi-bookmark fs-5"></i>
+                </div>
 
-<article class="card mb-4">
-  <div class="card-header bg-white d-flex justify-content-between align-items-center">
-    <div class="d-flex align-items-center gap-2">
-      <div class="rounded-circle bg-secondary-subtle" style="width: 32px; height: 32px;"></div>
-      <strong>Weekend vibes</strong>
-    </div>
-    <small class="text-muted">02/28</small>
-  </div>
+                <p class="mb-2"><strong>98 likes</strong></p>
 
-  <img src="https://picsum.photos/seed/ig3/900/600" class="w-100" alt="post image" />
+                <p class="mb-1">
+                  <strong>username</strong>
+                  This is a second post to make the feed look real.
+                </p>
 
-  <div class="card-body">
-    <div class="d-flex justify-content-between align-items-center mb-2">
-      <div class="d-flex gap-3 fs-5">
-        <i class="bi bi-heart"></i>
-        <i class="bi bi-chat"></i>
-        <i class="bi bi-send"></i>
-      </div>
-      <i class="bi bi-bookmark fs-5"></i>
-    </div>
+                <p class="text-muted mb-0">View all 2 comments</p>
+              </div>
+            </article>
 
-    <p class="mb-2"><strong>201 likes</strong></p>
+            <!-- Post 3 -->
+            <article class="card mb-4">
+              <div
+                class="card-header bg-white d-flex justify-content-between align-items-center"
+              >
+                <div class="d-flex align-items-center gap-2">
+                  <div
+                    class="rounded-circle bg-secondary-subtle"
+                    style="width: 32px; height: 32px"
+                  ></div>
+                  <strong>Weekend vibes</strong>
+                </div>
+                <small class="text-muted">02/28</small>
+              </div>
 
-    <p class="mb-1">
-      <strong>username</strong>
-      Third post. Same component, different content.
-    </p>
+              <img
+                src="https://picsum.photos/seed/ig3/900/600"
+                class="w-100"
+                alt="post image"
+              />
 
-    <p class="text-muted mb-0">View all 8 comments</p>
-  </div>
-</article>
+              <div class="card-body">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-2"
+                >
+                  <div class="d-flex gap-3 fs-5">
+                    <i class="bi bi-heart"></i>
+                    <i class="bi bi-chat"></i>
+                    <i class="bi bi-send"></i>
+                  </div>
+                  <i class="bi bi-bookmark fs-5"></i>
+                </div>
+
+                <p class="mb-2"><strong>201 likes</strong></p>
+
+                <p class="mb-1">
+                  <strong>username</strong>
+                  Third post. Same component, different content.
+                </p>
+
+                <p class="text-muted mb-0">View all 8 comments</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- GRID VIEW (3 por fila en desktop) -->
+      <section id="gridView" class="mt-4 d-none">
+        <div class="row g-2">
+          <div class="col-12 col-md-6 col-lg-4">
+            <img
+              src="https://picsum.photos/seed/ig1/600/600"
+              class="img-fluid"
+              alt="grid 1"
+            />
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <img
+              src="https://picsum.photos/seed/ig2/600/600"
+              class="img-fluid"
+              alt="grid 2"
+            />
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <img
+              src="https://picsum.photos/seed/ig3/600/600"
+              class="img-fluid"
+              alt="grid 3"
+            />
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <img
+              src="https://picsum.photos/seed/ig4/600/600"
+              class="img-fluid"
+              alt="grid 4"
+            />
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <img
+              src="https://picsum.photos/seed/ig5/600/600"
+              class="img-fluid"
+              alt="grid 5"
+            />
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <img
+              src="https://picsum.photos/seed/ig6/600/600"
+              class="img-fluid"
+              alt="grid 6"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Bootstrap JS Bundle (CDN) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const feedView = document.getElementById("feedView");
+    const gridView = document.getElementById("gridView");
+    const feedBtn = document.getElementById("feedBtn");
+    const gridBtn = document.getElementById("gridBtn");
+
+    function setActive(activeBtn, inactiveBtn) {
+      activeBtn.classList.remove("btn-outline-secondary");
+      activeBtn.classList.add("btn-secondary");
+
+      inactiveBtn.classList.remove("btn-secondary");
+      inactiveBtn.classList.add("btn-outline-secondary");
+    }
+
+    function showFeed() {
+      feedView.classList.remove("d-none");
+      gridView.classList.add("d-none");
+      setActive(feedBtn, gridBtn);
+    }
+
+    function showGrid() {
+      gridView.classList.remove("d-none");
+      feedView.classList.add("d-none");
+      setActive(gridBtn, feedBtn);
+    }
+
+    feedBtn.addEventListener("click", showFeed);
+    gridBtn.addEventListener("click", showGrid);
+
+    // Estado inicial
+    showFeed();
+  });
+</script>
+
+  </body>
+</html>
