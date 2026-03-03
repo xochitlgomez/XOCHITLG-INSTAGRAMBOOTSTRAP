@@ -41,9 +41,23 @@
 >
   New Post
 </button>
-          <button type="button" class="btn btn-outline-secondary btn-sm">
-            Settings
-          </button>
+          <div class="dropdown">
+  <button
+    class="btn btn-outline-secondary btn-sm dropdown-toggle"
+    type="button"
+    data-bs-toggle="dropdown"
+    aria-expanded="false"
+  >
+    Settings
+  </button>
+
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><a class="dropdown-item" href="#">Profile</a></li>
+    <li><a class="dropdown-item" href="#">Accessibility</a></li>
+    <li><hr class="dropdown-divider" /></li>
+    <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+  </ul>
+</div>
         </div>
       </div>
     </nav>
