@@ -33,9 +33,14 @@
 <button id="gridBtn" type="button" class="btn btn-outline-secondary btn-sm">
   Grid
 </button>
-          <button type="button" class="btn btn-success btn-sm">
-            New Post
-          </button>
+          <button
+  type="button"
+  class="btn btn-success btn-sm"
+  data-bs-toggle="modal"
+  data-bs-target="#newPostModal"
+>
+  New Post
+</button>
           <button type="button" class="btn btn-outline-secondary btn-sm">
             Settings
           </button>
@@ -233,6 +238,45 @@
         </div>
       </section>
     </main>
+
+    <div
+  class="modal fade"
+  id="newPostModal"
+  tabindex="-1"
+  aria-labelledby="newPostModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="newPostModalLabel">Create a new post</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+
+      <div class="modal-body">
+        <textarea
+          class="form-control"
+          rows="4"
+          placeholder="Write a caption..."
+        ></textarea>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+          Close
+        </button>
+        <button type="button" class="btn btn-success" data-bs-dismiss="modal">
+          Publish
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
 
     <!-- Bootstrap JS Bundle (CDN) -->
     <script
